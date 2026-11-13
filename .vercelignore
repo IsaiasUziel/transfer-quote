@@ -1,0 +1,13 @@
+# Upload only the files required to build the application.
+/*
+!src
+!public
+!package.json
+!bun.lock
+!index.html
+!tsconfig.json
+!tsconfig.app.json
+!tsconfig.node.json
+!vite.config.ts
+!vercel.json
+!LICENSE

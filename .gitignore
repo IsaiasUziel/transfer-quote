@@ -22,6 +22,7 @@ dist-ssr
 .claude/
 .opencode/
 .vite/
+.vercel/
 coverage/
 *.tsbuildinfo
 
