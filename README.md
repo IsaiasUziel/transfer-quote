@@ -27,6 +27,8 @@ To customize deployment defaults, copy `.env.example` to `.env.local`, edit the 
 
 History is stored in the current browser, not on a server. There are no accounts, payments, or cross-device synchronization. Address searches, map tiles, and routing send requests to the configured external services; their operators may log those requests. Reverse address lookup is opt-in.
 
+Vercel Web Analytics collects page views when enabled on the deployed Vercel project. The app does not send quote contents, addresses, or saved history as custom analytics events. Local development uses the SDK's development mode.
+
 ## How pricing works
 
 Each visit includes one outbound leg and one return leg. Both use the entered or calculated one-way distance, rounded to one decimal place.

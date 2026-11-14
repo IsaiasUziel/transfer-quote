@@ -47,6 +47,8 @@ Autocomplete uses Photon, never Nominatim. Keep provider credits and map attribu
 
 ## Verify the deployed origin
 
+On Vercel, enable **Web Analytics** in the project's **Analytics** tab, then deploy the app. The React integration is mounted once in `src/main.tsx` and records page views without custom quote events. See [Vercel Web Analytics setup](https://vercel.com/docs/analytics/quickstart). For other hosts, remove the `Analytics` component and import unless the host provides compatible analytics endpoints.
+
 After uploading `dist/`, verify first-run setup, suggestions or coordinate input, pin adjustment, route/manual distance, save/history, JSON export/import, and appearance on desktop and mobile. Check a fresh browser and any configured subpath.
 
 Browser data belongs to the deployment origin. Moving domains or ports does not move IndexedDB or localStorage. Export history before moving and import it at the new origin; base/rate/appearance settings must be configured there separately.
